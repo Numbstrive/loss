@@ -1,0 +1,27 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Unlock the Diary</title>
+  <style>
+    body { background: #1e1e2f; color: #fefefe; font-family: sans-serif; text-align: center; padding-top: 100px; }
+    input, button { font-size: 16px; padding: 10px; margin: 10px; }
+  </style>
+</head>
+<body>
+  <h1>loss</h1>
+  <p>again</p>
+  <input id="pass" type="password" placeholder="Your answer">
+  <button onclick="unlock()">Enter</button>
+
+  <script>
+    function unlock() {
+      const pass = document.getElementById('pass').value.toLowerCase();
+      if (pass === 'lynn') { // Replace 'cockatoo' with your secret word
+        window.location.href = 'diary.html';
+      } else {
+        alert('Wrong key. Try again.');
+      }
+    }
+  </script>
+</body>
+</html>
